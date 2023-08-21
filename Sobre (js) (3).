@@ -1,0 +1,38 @@
+(function( $, undefined ) {
+	var uiTooltip = $.ui.tooltip;
+	$.widget( "ui.tooltip", $.ui.tooltip, {
+		options: {
+			content: function() {
+				return $( this ).attr( "title" );
+			},
+			position: {
+				my: "left top",
+				at: "left bottom",
+				offset: "5 10"
+			},
+			show: {
+				delay: 0
+			},
+			hide: {
+				delay: 0
+			},
+			tooltipClass: null
+		},
+		_create: function() {
+			var that = this;
+			this.element.attr( "role", "tooltip" );
+			this.tooltip = this._tooltip( this.element );
+			this.liveRegion = $( "<div>" ).attr( "id", this.element.attr( "id" ) + "-live" ).addClass( "ui-tooltip-live" ).appendTo( this.document[ 0 ].body );
+			this._on( this.element, {
+				mouseenter: function( event ) {
+					var tooltipData = that._find( event.target );
+					if ( !tooltipData ) {
+						tooltipData = that._tooltip( event.target );
+					}
+					that._open( event, tooltipData );
+				},
+				mouseleave: function( event ) {
+					var tooltipData = that._find( event.target );
+					if ( tooltipData ) {
+						that._close( event, tooltipData );
+					}
