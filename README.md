@@ -23,29 +23,6 @@ O jogo consiste em:
 
 Abaixo, você pode ver um exemplo de como criar o jogo "Habbinfo" em JavaScript:
 
-HTML:
-
-html
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Habbinfo</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="script.js"></script>
-</head>
-<body>
-	<div id="game"></div>
-	<div id="menu">
-		<button id="new-game">Novo Jogo</button>
-		<button id="load-game">Carregar Jogo</button>
-		<button id="options">Opções</button>
-		<button id="credits">Créditos</button>
-	</div>
-</body>
-</html>
-
 CSS:
 
 css
