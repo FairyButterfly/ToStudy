@@ -1,0 +1,21 @@
+Para adicionar a função "Receber via PagBank" em HTML, siga os passos abaixo:
+1. Adicione o seguinte código HTML ao seu site:
+
+<form action="https://pagbank.com/receber" method="post">
+  <input type="hidden" name="merchant_id" value="YOUR_MERCHANT_ID">
+  <input type="hidden" name="amount" value="YOUR_AMOUNT">
+  <input type="hidden" name="currency" value="YOUR_CURRENCY">
+  <input type="hidden" name="description" value="YOUR_DESCRIPTION">
+  <input type="submit" value="Pagar">
+</form>
+
+2. Substitua "YOUR_MERCHANT_ID" pelo seu ID de comerciante do PagBank.
+3. Substitua "YOUR_AMOUNT" pelo valor que você deseja receber.
+4. Substitua "YOUR_CURRENCY" pela moeda que você deseja receber.
+5. Substitua "YOUR_DESCRIPTION" por uma descrição do pagamento.
+6. Salve o arquivo HTML.
+7. Abra o arquivo HTML em um navegador da web.
+8. Clique no botão "Pagar".
+9. Você será redirecionado para o site do PagBank.
+10. Insira suas informações de pagamento e clique em "Pagar".
+11. O pagamento será processado e você receberá um e-mail de confirmação.
