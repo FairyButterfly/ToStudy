@@ -1,0 +1,87 @@
+[HTML]
+html
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Nome Do Ambiente</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+	<header>
+		<h1>Nome do Ambiente</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Rooms</a></li>
+				<li><a href="#">Facilities</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<h2>Welcome to Nome do Ambiente</h2>
+			<p>Enjoy our spacious rooms and make your stay as comfortable as possible.</p>
+			<a href="#" class="btn">Book Now</a>
+		</section>
+		<section class="rooms">
+			<h2>Our Rooms</h2>
+			<div class="room">
+				<img src="room1.jpg" alt="Room 1">
+				<h3>Deluxe Room</h3>
+				<p>A spacious room with a balcony and a king-size bed.</p>
+				<p class="price">$250/night</p>
+				<a href="#" class="btn">Book Now</a>
+			</div>
+			<div class="room">
+				<img src="room2.jpg" alt="Room 2">
+				<h3>Superior Room</h3>
+				<p>A room with a private bathroom and a queen-size bed.</p>
+				<p class="price">$180/night</p>
+				<a href="#" class="btn">Book Now</a>
+			</div>
+			<div class="room">
+				<img src="room3.jpg" alt="Room 3">
+				<h3>Luxury Room</h3>
+				<p>A room with a private bathroom and a double bed.</p>
+				<p class="price">$200/night</p>
+				<a href="#" class="btn">Book Now</a>
+			</div>
+		</section>
+		<section class="facilities">
+			<h2>Our Facilities</h2>
+			<ul>
+				<li>Free Wi-Fi</li>
+				<li>Air Conditioning</li>
+				<li>Spa</li>
+				<li>Swimming Pool</li>
+				<li>Restaurant</li>
+				<li>Bar</li>
+			</ul>
+		</section>
+		<section class="contact">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message" required></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Nome Do Ambiente. All rights reserved.</p>
+	</footer>
+	<script src="script.js"></script>
+
+</body>
+
+</html>
